@@ -448,6 +448,13 @@ summary {
 	width: 1000px;
 }
 
+.l-header {
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
 .p-entry-content {
 	overflow: hidden;
 }
@@ -626,6 +633,59 @@ summary {
 .p-entry-content video,
 .p-entry-content object {
 	max-width: 100%;
+}
+
+.p-mv {
+	position: relative;
+}
+
+.p-mv::before {
+	-o-object-fit: top;
+	background: rgba(0, 0, 0, 0.34);
+	background-repeat: no-repeat;
+	content: "";
+	height: 87vh;
+	left: 0;
+	object-fit: top;
+	position: absolute;
+	top: 0;
+	width: 76.5%;
+	z-index: -9;
+}
+
+.p-mv::after {
+	background: #222;
+	content: "";
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 75.5%;
+	z-index: -10;
+}
+
+.p-mv__img {
+	-o-object-fit: cover;
+	-o-object-position: top;
+	background-repeat: no-repeat;
+	content: "";
+	height: 87vh;
+	left: 0;
+	object-fit: cover;
+	object-position: top;
+	position: absolute;
+	top: 0;
+	width: 76.5%;
+	z-index: -9;
+}
+
+.p-mv__img img {
+	-o-object-fit: cover;
+	-o-object-position: top;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	width: 100%;
 }
 
 .test {

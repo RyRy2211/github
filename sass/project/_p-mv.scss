@@ -1,0 +1,50 @@
+.p-mv{
+	position: relative;
+}
+
+.p-mv::before{
+	position: absolute;
+	content: "";
+	height: 87vh;
+	width: 76.5%;
+	background: rgba($color: #000000, $alpha: 0.34);
+	object-fit: top;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	z-index: -9;
+}
+
+.p-mv::after{
+	position: absolute;
+	content: "";
+	height: 100vh;
+	width: 75.5%;
+	background: #222;
+	top: 0;
+	right: 0;
+	z-index: -10;
+}
+
+.p-mv__img{
+}
+
+.p-mv__img{
+	position: absolute;
+	content: "";
+	height: 87vh;
+	width: 76.5%;
+	object-fit: cover;
+	object-position: top;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	z-index: -9;
+}
+
+.p-mv__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
